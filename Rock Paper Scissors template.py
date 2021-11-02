@@ -8,7 +8,7 @@ while True:
 	print("Enter choice \n 1. Rock \n 2. paper \n 3. scissor \n")    
 	
 	# take the input from user use the variable choice\n\n\n    
-	
+	choice = input()
 	
 	# OR is the short-circuit operator\n    
 	# if any one of the condition is true\n    
@@ -18,14 +18,19 @@ while True:
 		choice = int(input("enter valid input: "))    
 
 
-	# initialize value of choice_name variable    
+	# initialize value of choice_name variable   
+	choice_name = "" 
 	# corresponding to the choice value\n    
 	if choice == 1:       
-		choice_name = 'Rock'    
+		choice_name = "Rock"
+	elif choice == 2:
+		choice_name = "Paper"
+	elif choice == 3:
+		choice_name = "Scissor"
 	
 	
 	# print user choice\n\n\n    
-	
+	print(choice_name)
 	
 	# Computer chooses randomly any number\n    
 	# among 1 , 2 and 3. Using randint method\n    
